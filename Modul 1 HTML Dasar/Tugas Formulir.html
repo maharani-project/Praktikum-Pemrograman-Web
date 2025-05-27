@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body style="background-color: #f0f0f0; margin: 20px;">
+
+    <!-- Logo kampus -->
+    <img src="logo.jpeg" alt="Logo Kampus" width="150"><br><br>
+
+    <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Data Pribadi</legend>
+
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email"><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="gender" value="Pria" required>
+            <label for="pria">Pria</label><br>
+            <input type="radio" id="wanita" name="gender" value="Wanita">
+            <label for="wanita">Wanita</label><br><br>
+
+            <label>Hobi:</label><br>
+            <input type="checkbox" name="hobi" value="Membaca"> Membaca<br>
+            <input type="checkbox" name="hobi" value="Olahraga"> Olahraga<br>
+            <input type="checkbox" name="hobi" value="Musik"> Musik<br>
+            <input type="checkbox" name="hobi" value="Lainnya"> Lainnya<br><br>
+
+            <label for="jurusan">Pilih Jurusan:</label><br>
+            <select id="jurusan" name="jurusan" required>
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+                <option value="Bisnis Digital">Bisnis Digital</option>
+            </select><br><br>
+
+            <label for="alamat">Alamat Lengkap:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Masukkan alamat lengkap (opsional)"></textarea><br><br>
+
+            <input type="submit" value="Kirim">
+        </fieldset>
+    </form>
+
+    <br>
+    <!-- Link tambahan -->
+    <a href="https://www.stitek.ac.id" target="_blank">Informasi Kampus</a>
+
+</body>
+</html>
